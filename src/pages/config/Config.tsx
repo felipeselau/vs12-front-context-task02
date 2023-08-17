@@ -7,6 +7,7 @@ import { CardsWrapper } from "./configStyle";
 import { PageWrapper } from "./configStyle";
 import { emotesContext } from "../../context/emotesContext";
 import ChampCard from "../../components/champCard/ChampCard";
+import { useNavigate } from "react-router-dom";
 
 // TODO
 // consumir bancos via contexto e renderizar no componente
@@ -16,6 +17,8 @@ export default function Config(){
     const {getChamps, selectChamp ,champData, selectedChamp} = useContext(ChampsContext)
     const { getRoles, selectRole, rolesData, selectedRole } = useContext(rolesContext)
     const { getEmotes, selectEmote, emotesData , selectedEmote } = useContext(emotesContext)
+
+    const navigate = useNavigate()
 
     useEffect(()=>{
         getChamps();
@@ -77,6 +80,7 @@ export default function Config(){
                     </CardsWrapper>
             </div>
         </div>
+        <button onClick={()=> navigate("/")}>Concluído</button>
             
         </PageWrapper>
         </>

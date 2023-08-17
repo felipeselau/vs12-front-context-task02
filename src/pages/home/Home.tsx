@@ -4,11 +4,14 @@ import { ChampsContext } from "../../context/champsContext";
 import { rolesContext } from "../../context/rolesContext";
 import { emotesContext } from "../../context/emotesContext";
 import { HomePage } from "./homeStyle";
+import { useNavigate } from "react-router-dom";
 
 export default function Home() {
   const { selectedChamp } = useContext(ChampsContext);
   const { selectedRole } = useContext(rolesContext);
   const { selectedEmote } = useContext(emotesContext);
+
+  const navigate = useNavigate()
 
   return (
     <>
@@ -19,7 +22,10 @@ export default function Home() {
           <h3>Uma pequena Dashboard pessoal sobre League of Legends</h3>
         </div>
         {selectedChamp.name == "" ? (
+        <>
           <h2>Selecione um campeão na página Configurar!</h2>
+          <button onClick={()=> navigate("/config")}>Selecionar</button>
+        </>
         ) : (
           <div className="info-sect">
             <div className="champ">
@@ -32,9 +38,11 @@ export default function Home() {
             </div>
             <div className="sub-info">
               {selectedRole.role == "" && selectedEmote.name == "" ? (
+                <>
                 <h2>
                   Selecione sua classe favorita e emota na página Configurar!
                 </h2>
+                </>
               ) : (
                 <>
                   <div className="role">

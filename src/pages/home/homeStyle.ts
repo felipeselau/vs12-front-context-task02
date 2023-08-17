@@ -32,6 +32,23 @@ text-align: center;
     justify-content: space-between;
 }
 
+button{
+    all: unset;
+    cursor: pointer;
+    background-color: #CA9100;
+    padding: 1.5rem 1rem;
+    margin-top: 1.3rem;
+    border-radius: 12px;
+    width: 30%;
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+}
+
+button:hover{
+    opacity: 0.7;
+}
+
 
 
 `
