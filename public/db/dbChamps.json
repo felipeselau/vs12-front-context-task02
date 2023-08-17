@@ -1,0 +1,55 @@
+{
+    "champions": [
+        {
+            "id": "1",
+            "name": "Tristana",
+            "img": "tristana"
+        },
+        {
+            "id": "2",
+            "name": "Illaoi",
+            "img": "illaoi"
+        },
+        {
+            "id": "3",
+            "name": "Kai'sa",
+            "img": "kaisa"
+        },
+        {
+            "id": "4",
+            "name": "Sett",
+            "img": "sett"
+        },
+        {
+            "id": "5",
+            "name": "Ahri",
+            "img": "ahri"
+        },
+        {
+            "id": 6,
+            "name": "Veigar",
+            "img": "veigar"
+        },
+        {
+            "id": "7",
+            "name": "Zed",
+            "img": "zed"
+        },
+        {
+            "id": "8",
+            "name": "Talon",
+            "img": "talon"
+        },
+        {
+            "id": "9",
+            "name": "Lulu",
+            "img": "lulu"
+        },
+        {
+            "id": "10",
+            "name": "Braum",
+            "img": "braum"
+        }
+
+    ]
+}

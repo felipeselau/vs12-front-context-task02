@@ -1,0 +1,34 @@
+{
+    "emotes":[
+        {
+            "id": "1",
+            "name": "De Acordo com o plano",
+            "img": "According_to_Plan_Emote"
+        },
+        {
+            "id": "2",
+            "name": "Deleitar",
+            "img": "Emote_Deleitar"
+        },
+        {
+            "id": "3",
+            "name": "Desespero",
+            "img": "Emote_Desespero"
+        },
+        {
+            "id": "4",
+            "name": "Fino",
+            "img": "Emote_Fino"
+        },
+        {
+            "id": "5",
+            "name": "Só o Ouro",
+            "img": "Emote_Ouro"
+        },
+        {
+            "id": "6",
+            "name": "Tretando",
+            "img": "Emote_Tretando"
+        }
+    ]
+}
